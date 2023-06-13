@@ -16,7 +16,6 @@ public class TwoRangesSum {
         for (int i = 1; i <= lastInRow; i++) {
             if (0 < numberToSkip) {
                 numberToSkip--;
-                System.out.println(i);
                 sumOfSkipped += i;
                 continue;
             }
@@ -25,8 +24,5 @@ public class TwoRangesSum {
         System.out.println("skipped sum is " + sumOfSkipped);
         System.out.println("counted sum is " + sumOfCounted);
     }
-
-    public static void main(String[] args) {
-        printSumOfTwoRanges(5, 10);
-    }
 }
+
